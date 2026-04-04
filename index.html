@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujay Banarjee — B.Tech CSE &amp; Tech Entrepreneur</title>
+<meta name="description" content="Sujay Banarjee — B.Tech CSE Student at LPU, Aspiring Tech Entrepreneur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">S<span class="dot">.</span>B</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"          class="nav-link">About</a></li>
+      <li><a href="#education"      class="nav-link">Education</a></li>
+      <li><a href="#skills"         class="nav-link">Skills</a></li>
+      <li><a href="#projects"       class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#interests"      class="nav-link">Interests</a></li>
+      <li><a href="#achievements"   class="nav-link">Achievements</a></li>
+      <li><a href="#contact"        class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="hero-bf0.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="orb" style="width:600px;height:600px;background:radial-gradient(circle,rgba(200,169,110,0.07),transparent 70%);top:5%;left:-15%"></div>
+  <div class="orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(100,217,248,0.04),transparent 70%);top:40%;right:-5%;animation-delay:-5s"></div>
+  <div class="orb" style="width:700px;height:700px;background:radial-gradient(circle,rgba(200,169,110,0.03),transparent 70%);bottom:-20%;left:30%;animation-delay:-9s"></div>
+  <div class="hero-content">
+    <p class="hero-tag" id="hero-tag"><span class="tag-dot"></span>Portfolio &mdash; 2025</p>
+    <h1 class="hero-name">
+      <span class="line" id="h-line1">Sujay</span>
+      <span class="line line-2" id="h-line2">Banarjee.</span>
+    </h1>
+    <p class="hero-sub" id="hero-sub">B.Tech CSE Student &nbsp;&middot;&nbsp; Aspiring Tech Entrepreneur</p>
+    <p class="hero-tagline" id="hero-tl"><span class="tl-comment">// </span>Building scalable digital products and startup-driven solutions</p>
+    <div class="hero-actions" id="hero-act">
+      <a href="#projects" class="btn btn-gold magnetic">View Projects</a>
+      <a href="#contact"  class="btn btn-ghost magnetic">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint" id="scroll-hint">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sep sep-top"></div>
+  <div class="orb-abs" style="width:700px;height:700px;background:radial-gradient(circle,rgba(200,169,110,0.04),transparent 70%);top:-10%;right:-15%"></div>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-photo-frame">
+          <img src="ChatGPT_Image_Feb_26_2026_12_07_36_AM_optimized_850.png" alt="Sujay Banarjee" class="about-profile-img">
+        </div>
+        <div class="about-corner"></div>
+        <div class="about-tag">
+          <span class="about-tag-name">Sujay Banarjee</span>
+          <span class="about-tag-role">CSE &middot; LPU &middot; 1st Year</span>
+        </div>
+      </div>
+      <div class="about-text-col reveal-right">
+        <p class="eyebrow">About Me</p>
+        <h2 class="section-title" style="margin-bottom:1.5rem">Driven by<br><em>curiosity</em></h2>
+        <div class="about-body">
+          <p class="lead-p">I&rsquo;m Sujay Banarjee, a Computer Science student passionate about web development, startups, and building real-world tech products.</p>
+          <p>I am a first-year B.Tech CSE student at Lovely Professional University with a strong interest in technology, startups, and digital product development. Currently working on Portfolio Forge and Skill Swap India, aiming to solve real-world problems through scalable web solutions.</p>
+          <p>I focus on continuous learning, practical implementation, and building impactful products that matter.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat reveal" style="transition-delay:0.1s"><div class="stat-n">3+</div><div class="stat-l">Projects Active</div></div>
+          <div class="stat reveal" style="transition-delay:0.2s"><div class="stat-n">4+</div><div class="stat-l">Certifications</div></div>
+          <div class="stat reveal" style="transition-delay:0.3s"><div class="stat-n">&infin;</div><div class="stat-l">Ideas Building</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sep sep-bot"></div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <p class="eyebrow">Academic Background</p>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card card reveal" style="transition-delay:0.05s">
+        <div class="edu-inner">
+          <div class="edu-logo">
+            <img src="" alt="LPU" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="edu-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:4px">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <span>LPU</span>
+            </div>
+          </div>
+          <div>
+            <p class="edu-badge">University</p>
+            <h3 class="edu-name">Lovely Professional University</h3>
+            <p class="edu-deg">B.Tech &mdash; Computer Science Engineering</p>
+            <p class="edu-meta">2025 &ndash; Present &nbsp;&middot;&nbsp; 1st Year (Ongoing)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card card reveal" style="transition-delay:0.15s">
+        <div class="edu-inner">
+          <div class="edu-logo">
+            <img src="" alt="Nivedita" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="edu-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:4px">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+              <span>NCS</span>
+            </div>
+          </div>
+          <div>
+            <p class="edu-badge">School</p>
+            <h3 class="edu-name">Nivedita Children School</h3>
+            <p class="edu-deg">Class XII &mdash; Science</p>
+            <p class="edu-meta">Score: 72% &nbsp;&middot;&nbsp; 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sep sep-top"></div>
+  <div class="wrap">
+    <p class="eyebrow">What I Work With</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card card reveal" style="transition-delay:0.05s">
+        <p class="skill-ey">Stack</p>
+        <h3 class="skill-title">Technical Skills</h3>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          <span class="tag">React.js</span><span class="tag">Web Design</span>
+          <span class="tag">UI/UX Fundamentals</span><span class="tag">Responsive Design</span>
+          <span class="tag">Git</span><span class="tag">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card card reveal" style="transition-delay:0.15s">
+        <p class="skill-ey">Soft Skills</p>
+        <h3 class="skill-title">Professional Skills</h3>
+        <div class="tags">
+          <span class="tag">Startup Thinking</span><span class="tag">Problem Solving</span>
+          <span class="tag">Fast Learning</span><span class="tag">Project Building</span>
+          <span class="tag">Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sep sep-bot"></div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow">What I&rsquo;ve Built</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card card reveal" style="transition-delay:0.05s">
+        <div class="proj-inner">
+          <div class="proj-num">01</div>
+          <div class="proj-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3 class="proj-title">Attendance Calculator</h3>
+          <p class="proj-desc">A smart tool to calculate attendance percentage and track academic requirements &mdash; solving a real daily problem every student faces.</p>
+          <div class="proj-foot">
+            <span class="status s-done">Completed</span>
+            <div class="proj-arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card card reveal" style="transition-delay:0.15s">
+        <div class="proj-inner">
+          <div class="proj-num">02</div>
+          <div class="proj-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="proj-title">Skill Swap India</h3>
+          <p class="proj-desc">A platform for students to exchange and learn skills collaboratively &mdash; peer-to-peer skill sharing reimagined for Indian learners.</p>
+          <div class="proj-foot">
+            <span class="status s-wip">In Development</span>
+            <div class="proj-arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card card reveal" style="transition-delay:0.25s">
+        <div class="proj-inner">
+          <div class="proj-num">03</div>
+          <div class="proj-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h3 class="proj-title">Portfolio Forge</h3>
+          <p class="proj-desc">A premium platform to create high-end developer portfolios with modern UI/UX &mdash; because your online presence should be extraordinary.</p>
+          <div class="proj-foot">
+            <span class="status s-soon">Coming Soon</span>
+            <div class="proj-arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="sep sep-top"></div>
+  <div class="wrap">
+    <p class="eyebrow">Credentials</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+      <div class="cert-card card reveal" style="transition-delay:0.05s">
+        <div class="cert-inner"><div class="cert-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div><p class="cert-title">Certified Project Management Associate</p><p class="cert-issuer">Skill India Digital Hub</p><p class="cert-date">November 2025</p></div></div>
+      </div>
+      <div class="cert-card card reveal" style="transition-delay:0.1s">
+        <div class="cert-inner"><div class="cert-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div><p class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</p><p class="cert-issuer">Oracle</p><p class="cert-date">October 2025</p></div></div>
+      </div>
+      <div class="cert-card card reveal" style="transition-delay:0.15s">
+        <div class="cert-inner"><div class="cert-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div><p class="cert-title">Deloitte Australia - Data Analytics Job Simulation</p><p class="cert-issuer">Forage</p><p class="cert-date">September 2025</p></div></div>
+      </div>
+      <div class="cert-card card reveal" style="transition-delay:0.2s">
+        <div class="cert-inner"><div class="cert-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div><p class="cert-title">Git &amp; GitHub Basics</p><p class="cert-issuer">Udemy</p><p class="cert-date">2024</p></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sep sep-bot"></div>
+</section>
+
+<section id="interests">
+  <div class="wrap">
+    <p class="eyebrow">What Drives Me</p>
+    <h2 class="section-title">Interests</h2>
+    <div class="int-grid">
+      <div class="int-card card reveal" style="transition-delay:0.05s"><div class="int-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Web Development</h3></div>
+      <div class="int-card card reveal" style="transition-delay:0.1s"><div class="int-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Startup Building</h3></div>
+      <div class="int-card card reveal" style="transition-delay:0.15s"><div class="int-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>SaaS &amp; Products</h3></div>
+      <div class="int-card card reveal" style="transition-delay:0.2s"><div class="int-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Technology Trends</h3></div>
+      <div class="int-card card reveal" style="transition-delay:0.25s"><div class="int-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></div><h3>Personal Branding</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="sep sep-top"></div>
+  <div class="wrap">
+    <p class="eyebrow">Milestones</p>
+    <h2 class="section-title">Achievements</h2>
+    <div class="ach-list">
+      <div class="ach-item card reveal" style="transition-delay:0.05s">
+        <div class="ach-n">01</div><div class="ach-sep"></div>
+        <div><h3 class="ach-title">Actively Building Multiple Startup Projects</h3><p class="ach-desc">Simultaneously developing Portfolio Forge and Skill Swap India &mdash; learning to balance multiple product timelines while staying consistent in quality.</p></div>
+      </div>
+      <div class="ach-item card reveal" style="transition-delay:0.1s">
+        <div class="ach-n">02</div><div class="ach-sep"></div>
+        <div><h3 class="ach-title">Consistent Learning &amp; Development in Tech</h3><p class="ach-desc">Continuously expanding technical capabilities in web development and modern frameworks, backed by certifications and real-world implementation.</p></div>
+      </div>
+      <div class="ach-item card reveal" style="transition-delay:0.15s">
+        <div class="ach-n">03</div><div class="ach-sep"></div>
+        <div><h3 class="ach-title">Early-Stage Entrepreneur Mindset</h3><p class="ach-desc">Approaching technology with a product-builder&rsquo;s lens from the very first year &mdash; focused on scalability, user value, and real-world impact.</p></div>
+      </div>
+      <div class="ach-item card reveal" style="transition-delay:0.2s">
+        <div class="ach-n">04</div><div class="ach-sep"></div>
+        <div><h3 class="ach-title">Strong Project-Based Learning Approach</h3><p class="ach-desc">Bridging the gap between academic theory and practical implementation &mdash; translating classroom concepts into deployed, buildable products.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="sep sep-bot"></div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-layout">
+      <div class="contact-left reveal-left">
+        <p class="eyebrow">Let&rsquo;s Connect</p>
+        <h2 class="section-title">Get In <em>Touch</em></h2>
+        <p class="contact-intro">Have a project, an idea, or just want to say hello? I&rsquo;m always open to meaningful conversations &mdash; whether it&rsquo;s about building something together or simply connecting.</p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/sujaybanarjee/" target="_blank" rel="noopener" class="btn btn-gold magnetic">Connect on LinkedIn</a>
+          <a href="mailto:sujaybanarjeee@gmail.com" class="btn btn-ghost magnetic">Send Email</a>
+        </div>
+      </div>
+      <div class="contact-right reveal-right">
+        <div class="contact-items">
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><span class="c-label">Email</span><a href="mailto:sujaybanarjeee@gmail.com" class="c-val">sujaybanarjeee@gmail.com</a></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><span class="c-label">LinkedIn</span><a href="https://www.linkedin.com/in/sujaybanarjee/" target="_blank" rel="noopener" class="c-val">linkedin.com/in/sujaybanarjee</a></div></div>
+          <div class="c-item"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><span class="c-label">Location</span><span class="c-val">India</span></div></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sujaybanarjee/" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="mailto:sujaybanarjeee@gmail.com" class="soc-btn" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <span class="footer-logo">S<span>.</span>B</span>
+      <p class="footer-copy">&copy; 2025 Sujay Banarjee &mdash; All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
